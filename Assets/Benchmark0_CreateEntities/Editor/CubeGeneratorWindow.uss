@@ -1,0 +1,15 @@
+.custom-label {
+    font-size: 20px;
+    -unity-font-style: bold;
+    color: rgb(68, 138, 255);
+    margin-left: 0;
+    padding-left: 0;
+}
+.some-styled-field {
+    -unity-font-style: bold;
+}
+
+.some-styled-field .unity-base-field__input {
+    -unity-font-style: italic;
+}
+

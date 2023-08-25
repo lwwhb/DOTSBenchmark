@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Bentchmark0_CreateEntities/Scenes/SampleScene.unity
+    path: Assets/Benchmark0_CreateEntities/Scenes/CreateEntitiesBenchmark.unity
+    guid: 8a8046c7fb8d4424d9e0c40201058ab7
+  - enabled: 1
+    path: Assets/Benchmark0_CreateEntities/Scenes/CreateEntitiesByBaker/CreateEntitiesByBaker.unity
+    guid: f08d6e0f4007448babf3507ada98855b
+  - enabled: 1
+    path: Assets/Benchmark0_CreateEntities/Scenes/CreateEntitiesByPrefab/CreateEntitiesByPrefab.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Benchmark0_CreateEntities/Scenes/CreateEntitiesByPrefabWithJobs/CreateEntitiesByPrefabWithJobs.unity
+    guid: 2fa7aa188ad8b4befb486873306de26e
+  - enabled: 1
+    path: Assets/Benchmark0_CreateEntities/Scenes/CreateEntitiesByScript/CreateEntitiesByScript.unity
+    guid: 4b2423ab32fea444fa619d1876f4cf9b
   m_configObjects: {}

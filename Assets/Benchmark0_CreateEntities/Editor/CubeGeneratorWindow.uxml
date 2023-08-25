@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Benchmark0_CreateEntities/Editor/CubeGeneratorWindow.uss?fileID=7433441132597879392&amp;guid=59c18bef1336a46abb954a3a76ef59e4&amp;type=3#CubeGeneratorWindow" />
+    <uie:ObjectField label="protoPrefab" name="protoPrefabField" />
+    <ui:IntegerField label="xHalfCount" value="40" name="xHalfCountField" />
+    <ui:IntegerField label="zHalfCount" value="40" name="zHalfCountField" />
+    <ui:Button text="生成" display-tooltip-when-elided="true" name="generateButton" />
+    <ui:Button text="清除" parse-escape-sequences="true" display-tooltip-when-elided="true" name="cleanupButton" />
+    <ui:Label tabindex="-1" text="生成结果信息" parse-escape-sequences="true" display-tooltip-when-elided="true" name="resultInfoLabel" />
+</ui:UXML>
