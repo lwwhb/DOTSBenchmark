@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Benchmark2_AssetsLoad/Scenes/AssetsLoad.unity
+    guid: 4c856984d9f9e46c08e42cc21da1885e
+  - enabled: 1
     path: Assets/Benchmark1_AddComponents/Scenes/AddComponentBenchmark.unity
     guid: 6b283df98c95946e2899259a72b75126
   - enabled: 1

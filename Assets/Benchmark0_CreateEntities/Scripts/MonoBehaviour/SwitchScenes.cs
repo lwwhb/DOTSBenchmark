@@ -11,13 +11,13 @@ namespace DOTSBenchmark0
         {
             if (sceneName.Equals("CreateEntitiesByPrefab"))
             {
-                var group =World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<CubeGenerateSystem>();
+                var group = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<CubeGenerateSystem>();
                 World.DefaultGameObjectInjectionWorld.GetExistingSystemManaged<InitializationSystemGroup>()
                     .AddSystemToUpdateList(group);
             }
             else if (sceneName.Equals("CreateEntitiesByPrefabWithJobs"))
             {
-                var group =World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<CubeGenerateWithJobSystem>();
+                var group = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<CubeGenerateWithJobSystem>();
                 World.DefaultGameObjectInjectionWorld.GetExistingSystemManaged<InitializationSystemGroup>()
                     .AddSystemToUpdateList(group);
             }
