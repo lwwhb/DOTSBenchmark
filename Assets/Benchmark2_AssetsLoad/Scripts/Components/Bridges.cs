@@ -7,4 +7,9 @@ namespace Benchmark2_AssetsLoad.Scripts.Components
     {
         public UIEventHandler handler;
     }
+    
+    public class InputEventBridge : IComponentData
+    {
+        public InputEventHandler handler;
+    }
 }

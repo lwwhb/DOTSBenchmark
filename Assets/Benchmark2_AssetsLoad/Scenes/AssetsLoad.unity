@@ -624,6 +624,7 @@ GameObject:
   - component: {fileID: 883816007}
   - component: {fileID: 883816006}
   - component: {fileID: 883816009}
+  - component: {fileID: 883816010}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -695,6 +696,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadEntityPrefabButton: {fileID: 1594425405}
   loadGameObjectPrefabButton: {fileID: 1234086483}
+--- !u!114 &883816010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883816005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a434a454da845d29aa3af2b56e91ea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
