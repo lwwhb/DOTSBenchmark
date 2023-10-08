@@ -3,16 +3,13 @@ using Benchmark2_AssetsLoad.Scripts.Components;
 using Benchmark2_AssetsLoad.Scripts.MonoBehaviours;
 using Unity.Entities;
 using Unity.Entities.Content;
-using Unity.Mathematics;
 using Unity.Scenes;
-using Unity.Transforms;
 using UnityEngine;
 
 namespace Benchmark2_AssetsLoad.Scripts.Systems
 {
-#if !USE_UNMANAGEDSYSTEM
     [DisableAutoCreation]
-#endif
+    [RequireMatchingQueriesForUpdate]
     [UpdateInGroup(typeof(InitializationSystemGroup))]
     [UpdateAfter(typeof(SceneSystemGroup))]
     public partial struct UIInteropSystem : ISystem, ISystemStartStop

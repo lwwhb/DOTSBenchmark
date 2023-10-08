@@ -1,12 +1,9 @@
+using Benchmark2_AssetsLoad.Scripts.Systems;
 using TMPro;
+using Unity.Entities;
 using UnityEngine;
 using UnityEngine.UI;
-#if USE_UNMANAGEDSYSTEM
 using System;
-#else
-using Benchmark2_AssetsLoad.Scripts.Systems;
-using Unity.Entities;
-#endif
 namespace Benchmark2_AssetsLoad.Scripts.MonoBehaviours
 {
     enum ButtonState
@@ -38,7 +35,13 @@ namespace Benchmark2_AssetsLoad.Scripts.MonoBehaviours
             if (_uiInteropManagedSystem != null)
             {
                 _uiInteropManagedSystem.SetUIEventHandler(this);
+                World.DefaultGameObjectInjectionWorld.GetExistingSystemManaged<InitializationSystemGroup>()
+                    .AddSystemToUpdateList(_uiInteropManagedSystem);
             }
+#else
+            var uiInteropSystem = World.DefaultGameObjectInjectionWorld.GetOrCreateSystem<UIInteropSystem>();
+            World.DefaultGameObjectInjectionWorld.GetExistingSystemManaged<InitializationSystemGroup>()
+                .AddSystemToUpdateList(uiInteropSystem);
 #endif
         }
 

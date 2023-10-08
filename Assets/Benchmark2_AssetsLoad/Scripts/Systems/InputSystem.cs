@@ -7,6 +7,8 @@ using UnityEngine;
 
 namespace Benchmark2_AssetsLoad.Scripts.Systems
 {
+    [DisableAutoCreation]
+    [RequireMatchingQueriesForUpdate]
     [UpdateInGroup(typeof(SimulationSystemGroup))]
     public partial struct InputSystem : ISystem
     {

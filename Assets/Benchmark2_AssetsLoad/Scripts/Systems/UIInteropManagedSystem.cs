@@ -8,9 +8,8 @@ using UnityEngine;
 
 namespace Benchmark2_AssetsLoad.Scripts.Systems
 {
-#if USE_UNMANAGEDSYSTEM
     [DisableAutoCreation]
-#endif
+    [RequireMatchingQueriesForUpdate]
     [UpdateInGroup(typeof(InitializationSystemGroup))]
     [UpdateAfter(typeof(SceneSystemGroup))]
     public partial class UIInteropManagedSystem : SystemBase
