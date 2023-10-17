@@ -21,9 +21,9 @@ namespace Benchmark3_SharedStatic.Scripts.SharedStaticData
         
         public SharedCubesEntityColorMap(int capacity)
         {
-            entityColorMap = new NativeParallelHashMap<Entity, float3>(capacity, Allocator.Persistent);
+            entityColorMap = new NativeHashMap<Entity, float3>(capacity, Allocator.Persistent);
         }
         
-        public NativeParallelHashMap<Entity, float3> entityColorMap; 
+        public NativeHashMap<Entity, float3> entityColorMap; 
     }
 }

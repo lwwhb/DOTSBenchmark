@@ -6,9 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Benchmark3_SharedStatic/Scenes/SharedStaticBenchmark.unity
-    guid: 30b3b2eb017134dff8a9c30b668ca2f8
-  - enabled: 1
     path: Assets/Benchmark3_SharedStatic/Scenes/SharedStatic.unity
     guid: 0244e46860ee04e2bb13323c03db3265
   - enabled: 1

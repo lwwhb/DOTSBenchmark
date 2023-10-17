@@ -21,6 +21,7 @@ namespace Benchmark3_SharedStatic.Scripts.Systems
             int counter = 0;
             foreach (var (color, entity) in SystemAPI.Query<RefRW<CubeColor>>().WithEntityAccess())
             {
+                //染红色
                 for (int i = 0; i < DyeRedNumber; i++)
                 {
                     int index = GlobalSettings.SharedValue.Data.random.NextInt(cubeCount);
@@ -36,7 +37,7 @@ namespace Benchmark3_SharedStatic.Scripts.Systems
                         }
                     }
                 }
-                
+                //染绿色
                 for (int i = 0; i < DyeGreenNumber; i++)
                 {
                     int index = GlobalSettings.SharedValue.Data.random.NextInt(cubeCount);
@@ -52,7 +53,7 @@ namespace Benchmark3_SharedStatic.Scripts.Systems
                         }
                     }
                 }
-                
+                //染蓝色
                 for (int i = 0; i < DyeBlueNumber; i++)
                 {
                     int index = GlobalSettings.SharedValue.Data.random.NextInt(cubeCount);
