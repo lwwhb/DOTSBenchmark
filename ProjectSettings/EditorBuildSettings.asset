@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes.unity
+    guid: 7edfa59681be44abdaedc3b04797e2a4
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/CustomSectionMetadata.unity
+    guid: 9aa29d4afc65e4636accd173055477e0
+  - enabled: 1
     path: Assets/Benchmark3_SharedStatic/Scenes/SharedStatic.unity
     guid: 0244e46860ee04e2bb13323c03db3265
   - enabled: 1
@@ -32,4 +38,154 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Benchmark0_CreateEntities/Scenes/CreateEntitiesByScript/CreateEntitiesByScript.unity
     guid: 4b2423ab32fea444fa619d1876f4cf9b
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/EntitiesSubscenes.unity
+    guid: 163080231978b432a92af0ef6739f3e8
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene1.unity
+    guid: c1a2217128f7b44c29b0fe58a5cd531d
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene2.unity
+    guid: 727a9b545946a4597ba84ce39aa250fa
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene3.unity
+    guid: a9eef5b52f5ef4a848d63e296f5192f9
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene4.unity
+    guid: 695461d2cf333426fad2abe0fd01923f
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene5.unity
+    guid: 76d6542f244194d8c8f01421dd3fa28e
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene6.unity
+    guid: ddd69953418474cd3b8f91546948e578
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene7.unity
+    guid: 4cb764f52fd6c4d6da7ab5ba13b5cb03
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene8.unity
+    guid: 68ff0aa94935e4b2fb5b1c50958b07ca
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene9.unity
+    guid: c2e083e4574c14c9a8367119cd132c37
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene10.unity
+    guid: b93958dcb34a6473c820da192a51fd4d
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene11.unity
+    guid: 27d4148a9ab384d44aabac95ccdec259
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene12.unity
+    guid: 9cb1868eedae94c47b461c263901f833
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene13.unity
+    guid: 91e2e7f74aec3424b98e097e2c1ae832
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene14.unity
+    guid: edb00c86a886f45b2be68ecbae515a4b
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene15.unity
+    guid: 2791711e157714231b1c89142a39758b
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene16.unity
+    guid: 208c6d6e4cf9a4acfa5157b4dea90cc7
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene17.unity
+    guid: 01d7f04c7192446b6a022e5d6aa2a1bf
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene18.unity
+    guid: 42cb73b1961ec47979e911d1c9c0c024
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene19.unity
+    guid: 618730e458aa64807bf93bb92bd52400
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene20.unity
+    guid: 7afb6c724851c4c05babb6e2db884e6d
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene21.unity
+    guid: 580e03ac6c1324dada7f10e8b1e30d6f
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene22.unity
+    guid: 7791c444ac50e4fa6a28bed7b7e1bdae
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene23.unity
+    guid: a73d2ce8499064ae78f30910e9a7b074
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene24.unity
+    guid: 7e69c8a322aee49a6838230282e255f0
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene25.unity
+    guid: 5657bced01bac4da8bccd1ee958f8c51
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene26.unity
+    guid: 45745f7b765d94cd890cc89bab77f0e4
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene27.unity
+    guid: 6faca9cf3628f479bb37bf7a7077281e
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene28.unity
+    guid: 095cdb16351c748d4b9b836679342a1a
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene29.unity
+    guid: 052901b90093a47548d4fdba1b2943e3
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene30.unity
+    guid: 5fde5fdf67bec40388d276fcd811fdf3
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene31.unity
+    guid: bcbd07d59cc754486be2670903f905dc
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene32.unity
+    guid: f7c5bba750755463e9fa58bf92568e24
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene33.unity
+    guid: 46194933a721241609dac4133401fc70
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene34.unity
+    guid: 42392ae3c44204c6c9ca39dc2423a84a
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene35.unity
+    guid: 7a9d87d2fda934f2ba71005dbf820233
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene36.unity
+    guid: 00185665b9bab49b19fc0de6675c696b
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene37.unity
+    guid: 3e6ee60b7286b44e1b6861d0d7eef816
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene38.unity
+    guid: 65e50ac4e0f384fbab9b86a4727caeba
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene39.unity
+    guid: fdd2a4e9a052d4f15833969613461eeb
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene40.unity
+    guid: 8cc6c72426c6249209018dac27d5cae8
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene41.unity
+    guid: f0245c3d61b094b54a35094a5478ff64
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene42.unity
+    guid: 5bd0ca860c7b64d58896dfd5b88e3e97
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene43.unity
+    guid: 8575f3c95a280454d9679532d017f14b
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene44.unity
+    guid: fc50140382a36448089acf326150db9f
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene45.unity
+    guid: 3ae02890c484847659feecd0146f9b7f
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene46.unity
+    guid: 2635de58abe7844708f8f7b48dd70689
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene47.unity
+    guid: 75ab8bf8bd6aa400d9a17ca7042167d4
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene48.unity
+    guid: e26b095454cb24fe6bd34b61b64bdcc3
+  - enabled: 1
+    path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene49.unity
+    guid: 450e091d25cf84fb8bd44108a58adff2
   m_configObjects: {}
