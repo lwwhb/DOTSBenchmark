@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Benchmark5_ContentManagement/Scenes/LoadSceneContent.unity
+    guid: 68ac5af02b450471dab7380c196581eb
+  - enabled: 1
+    path: Assets/Benchmark5_ContentManagement/Scenes/LoadSceneContent/AdditiveCubeScene.unity
+    guid: 2e665a42d8ef9445b9a39385f6127d4a
+  - enabled: 1
+    path: Assets/Benchmark5_ContentManagement/Scenes/LoadSceneContent/AdditiveSphereScene.unity
+    guid: 7244510af5304489385fc086173db33d
+  - enabled: 1
+    path: Assets/Benchmark5_ContentManagement/Scenes/LoadSceneContent/SceneContentLoader.unity
+    guid: 444df6c31c751465e8d2c3725b5f2d82
+  - enabled: 1
     path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes.unity
     guid: 7edfa59681be44abdaedc3b04797e2a4
   - enabled: 1
