@@ -13,16 +13,15 @@ namespace Benchmark5_ContentManagement.Scripts.Monobehaviours
 #if ENABLE_CONTENT_DELIVERY
         public string remoteUrlRoot;
         public string initialContentSet;
-#endif
         private bool contentIsReady;
+#endif
         private SceneContentApiSystem sceneContentAPI;
         private void Start()
         {
+            
 #if ENABLE_CONTENT_DELIVERY
             ContentDeliveryGlobalState.LogFunc = LogUtility.ContentDeliveryLog;
             //如果remoteUrlRoot为空，则从本地加载
-            RuntimeContentSystem.LoadContentCatalog(remoteUrlRoot, Application.persistentDataPath + "/content-cache",
-                initialContentSet);
             ContentDeliveryGlobalState.Initialize(remoteUrlRoot, Application.persistentDataPath + "/content-cache",
                 initialContentSet, s =>
                 {
@@ -58,26 +57,39 @@ namespace Benchmark5_ContentManagement.Scripts.Monobehaviours
 
         public void OnClickLoadAdditiveScenes()
         {
-            if (sceneContentAPI != null && contentIsReady)
+            if (sceneContentAPI != null)
             {
+#if ENABLE_CONTENT_DELIVERY
+                if(contentIsReady)
+                    sceneContentAPI.LoadAdditiveScenesAsync();
+                else
+                {
+                    LogUtility.ContentDeliveryLogError("Content is not ready");
+                }
+#else
                 sceneContentAPI.LoadAdditiveScenesAsync();
-            }
-            else
-            {
-                LogUtility.ContentDeliveryLogError("Content is not ready");
+#endif
+                
+                
             }
         }
         
         public void OnClickUnLoadAdditiveScenes()
         {
-            if (sceneContentAPI != null && contentIsReady)
+            if (sceneContentAPI != null)
             {
+#if ENABLE_CONTENT_DELIVERY
+                if(contentIsReady)
+                    sceneContentAPI.UnLoadAdditiveScenes();
+                else
+                {
+                    LogUtility.ContentDeliveryLogError("Content is not ready");
+                }
+#else
                 sceneContentAPI.UnLoadAdditiveScenes();
+#endif
             }
-            else
-            {
-                LogUtility.ContentDeliveryLogError("Content is not ready");
-            }
+            
         }
         
         public void OnClickSwitchScene()

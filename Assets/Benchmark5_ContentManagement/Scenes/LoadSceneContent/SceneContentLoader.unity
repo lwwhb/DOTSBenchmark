@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 3324204019692072502, guid: 6cab5c0d9c35340baa0633a29225eedd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 3324204019692072502, guid: 6cab5c0d9c35340baa0633a29225eedd,
         type: 3}
@@ -202,6 +202,8 @@ GameObject:
   - component: {fileID: 1703454967}
   - component: {fileID: 1703454968}
   - component: {fileID: 1703454969}
+  - component: {fileID: 1703454970}
+  - component: {fileID: 1703454971}
   m_Layer: 0
   m_Name: Loader
   m_TagString: Untagged
@@ -286,6 +288,69 @@ MonoBehaviour:
             w: 3189266065
         IdentifierType: 1
       GenerationType: 3
+--- !u!114 &1703454970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703454966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e048466ecf54af782d2bca2c1ef4dfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneAsset:
+    Id:
+      GlobalId:
+        SceneObjectIdentifier0: 102900000
+        SceneObjectIdentifier1: 0
+        AssetGUID:
+          Value:
+            x: 217292630
+            y: 591681484
+            z: 2497506443
+            w: 3078189584
+        IdentifierType: 1
+      GenerationType: 3
+--- !u!114 &1703454971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703454966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 368cb85650674e3dbd9fb5c482c23567, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mesh:
+    Id:
+      GlobalId:
+        SceneObjectIdentifier0: 10207
+        SceneObjectIdentifier1: 0
+        AssetGUID:
+          Value:
+            x: 0
+            y: 0
+            z: 14
+            w: 0
+        IdentifierType: 4
+      GenerationType: 1
+  material:
+    Id:
+      GlobalId:
+        SceneObjectIdentifier0: 2100000
+        SceneObjectIdentifier1: 0
+        AssetGUID:
+          Value:
+            x: 1180454398
+            y: 3762593675
+            z: 996996015
+            w: 1110050724
+        IdentifierType: 3
+      GenerationType: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

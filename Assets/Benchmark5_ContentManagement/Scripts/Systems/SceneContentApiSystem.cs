@@ -24,7 +24,7 @@ namespace Benchmark5_ContentManagement.Scripts.Systems
                 
                 if (!sceneAsset.scene.IsValid() || !sceneAsset.scene.isLoaded)
                 {
-                    LogUtility.ContentDeliveryLog($"LoadAdditiveScenesAsync: {sceneAsset.sceneAssetRef.ToString()}");
+                    LogUtility.ContentManagementLog($"LoadAdditiveScenesAsync: {sceneAsset.sceneAssetRef.ToString()}");
                     Scene scene = sceneAsset.sceneAssetRef.LoadAsync(new Unity.Loading.ContentSceneParameters()
                     {
                         loadSceneMode = UnityEngine.SceneManagement.LoadSceneMode.Additive

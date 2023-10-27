@@ -17,7 +17,7 @@ namespace Benchmark5_ContentManagement.Scripts.Authoring
         {
             public override void Bake(SwitchSceneAssetAuthoring authoring)
             {
-                var entity = GetEntity(TransformUsageFlags.None);
+                var entity = GetEntity(TransformUsageFlags.Dynamic);
                 AddComponent(entity, new SwitchSceneAsset
                 {
                     sceneAssetRef = authoring.switchSceneRef,

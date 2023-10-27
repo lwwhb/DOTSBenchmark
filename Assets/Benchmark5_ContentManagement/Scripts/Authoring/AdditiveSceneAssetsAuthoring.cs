@@ -20,7 +20,7 @@ namespace Benchmark5_ContentManagement.Scripts.Authoring
         {
             public override void Bake(AdditiveSceneAssetsAuthoring authoring)
             {
-                var entity = GetEntity(TransformUsageFlags.None);
+                var entity = GetEntity(TransformUsageFlags.Dynamic);
                 DynamicBuffer<AdditiveSceneAsset>
                     loadScenesData = AddBuffer<AdditiveSceneAsset>(entity);
                 loadScenesData.Length = authoring.loadScenesRef.Count;
