@@ -1,14 +1,13 @@
 using Unity.Entities;
 using Unity.Entities.Content;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Benchmark5_ContentManagement.Scripts.Authoring
 {
     public struct SwitchSceneAsset : IComponentData
     {
         public WeakObjectSceneReference sceneAssetRef;
-        public Scene scene;
+        public bool startedLoad;
     }
     public class SwitchSceneAssetAuthoring : MonoBehaviour
     {
@@ -21,7 +20,7 @@ namespace Benchmark5_ContentManagement.Scripts.Authoring
                 AddComponent(entity, new SwitchSceneAsset
                 {
                     sceneAssetRef = authoring.switchSceneRef,
-                    scene = default
+                    startedLoad = false
                 });
             }
         }

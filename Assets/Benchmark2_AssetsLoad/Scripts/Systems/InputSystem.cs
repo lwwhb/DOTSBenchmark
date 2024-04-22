@@ -17,7 +17,7 @@ namespace Benchmark2_AssetsLoad.Scripts.Systems
             state.RequireForUpdate<PhysicsWorldSingleton>();
             state.EntityManager.AddComponentData(state.SystemHandle, new InputEventBridge()
             {
-                handler = Object.FindObjectOfType<InputEventHandler>()
+                handler = Object.FindFirstObjectByType<InputEventHandler>()
             });
         }
         

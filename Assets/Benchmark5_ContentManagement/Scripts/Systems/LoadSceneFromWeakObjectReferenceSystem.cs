@@ -19,9 +19,9 @@ namespace Benchmark5_ContentManagement.Scripts.Systems
                 {
                     Scene scene = sceneData.ValueRW.sceneRef.LoadAsync(new Unity.Loading.ContentSceneParameters()
                     {
+                        autoIntegrate = true,
                         loadSceneMode = UnityEngine.SceneManagement.LoadSceneMode.Additive
                     });
-                    sceneData.ValueRW.scene = scene;
                     sceneData.ValueRW.startedLoad = true;
                 }
             }

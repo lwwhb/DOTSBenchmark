@@ -8,7 +8,6 @@ namespace Benchmark5_ContentManagement.Scripts.Authoring
     public struct WeakObjectSceneReferenceData : IComponentData
     {
         public bool startedLoad;
-        public Scene scene;
         public WeakObjectSceneReference sceneRef;
     }
     public class WeakObjectSceneReferenceDataAuthoring : MonoBehaviour
@@ -22,7 +21,6 @@ namespace Benchmark5_ContentManagement.Scripts.Authoring
                 AddComponent(entity, new WeakObjectSceneReferenceData
                 {
                     startedLoad = false,
-                    scene = default,
                     sceneRef = authoring.sceneAsset
                 });
             }

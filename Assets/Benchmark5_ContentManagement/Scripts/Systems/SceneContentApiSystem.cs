@@ -1,6 +1,8 @@
+using System.Collections.Generic;
 using Benchmark5_ContentManagement.Scripts.Authoring;
 using Common.Scripts;
 using Unity.Entities;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Benchmark5_ContentManagement.Scripts.Systems
@@ -8,9 +10,17 @@ namespace Benchmark5_ContentManagement.Scripts.Systems
     [DisableAutoCreation]
     public partial class SceneContentApiSystem : SystemBase
     {
+        private bool loggedLoadedScene = false;
+        private Scene loadedScene;
+        private List<Scene> loadedAdditiveScenes = new List<Scene>();
         protected override void OnUpdate()
         {
-            
+            bool needLogLoadedScene = loadedScene.IsValid() && loadedScene.isLoaded;
+            if (needLogLoadedScene != loggedLoadedScene)
+            {
+                LogUtility.ContentManagementLog(loadedScene.name + " is Loaded!!");
+                loggedLoadedScene = needLogLoadedScene;
+            }
         }
 
         public void LoadAdditiveScenesAsync()
@@ -21,16 +31,18 @@ namespace Benchmark5_ContentManagement.Scripts.Systems
                 var sceneAsset = additiveSceneAssets[i];
                 if (!sceneAsset.sceneAssetRef.IsReferenceValid)
                     continue;
-                
-                if (!sceneAsset.scene.IsValid() || !sceneAsset.scene.isLoaded)
+               
+                if(!sceneAsset.startedLoad)
                 {
                     LogUtility.ContentManagementLog($"LoadAdditiveScenesAsync: {sceneAsset.sceneAssetRef.ToString()}");
                     Scene scene = sceneAsset.sceneAssetRef.LoadAsync(new Unity.Loading.ContentSceneParameters()
                     {
+                        autoIntegrate = true,
                         loadSceneMode = UnityEngine.SceneManagement.LoadSceneMode.Additive
                     });
-                    sceneAsset.scene = scene;
+                    sceneAsset.startedLoad = true;
                     additiveSceneAssets[i] = sceneAsset;
+                    loadedAdditiveScenes.Add(scene);
                 }
             }
         }
@@ -43,14 +55,15 @@ namespace Benchmark5_ContentManagement.Scripts.Systems
                 var sceneAsset = additiveSceneAssets[i];
                 if (!sceneAsset.sceneAssetRef.IsReferenceValid)
                     continue;
-
-                if (sceneAsset.scene.IsValid() && sceneAsset.scene.isLoaded)
+                if(sceneAsset.startedLoad)
                 {
-                    sceneAsset.sceneAssetRef.Unload(ref sceneAsset.scene);
-                    sceneAsset.scene = default;
+                    var loadedAdditiveScene = loadedAdditiveScenes[i];
+                    sceneAsset.sceneAssetRef.Unload(ref loadedAdditiveScene);
+                    sceneAsset.startedLoad = false;
                     additiveSceneAssets[i] = sceneAsset;
                 }
             }
+            loadedAdditiveScenes.Clear();
         }
 
         public void SwitchSceneAsync()
@@ -58,14 +71,16 @@ namespace Benchmark5_ContentManagement.Scripts.Systems
             var switchSceneAsset = SystemAPI.GetSingletonRW<SwitchSceneAsset>();
             if (!switchSceneAsset.ValueRW.sceneAssetRef.IsReferenceValid)
                 return;
-
-            if (!switchSceneAsset.ValueRW.scene.IsValid() && !switchSceneAsset.ValueRW.scene.isLoaded)
+            if (!switchSceneAsset.ValueRW.startedLoad)
             {
+                LogUtility.ContentManagementLog($"SwitchSceneAsync: {switchSceneAsset.ValueRO.sceneAssetRef.ToString()}");
                 Scene scene = switchSceneAsset.ValueRW.sceneAssetRef.LoadAsync(new Unity.Loading.ContentSceneParameters()
                 {
-                    loadSceneMode = UnityEngine.SceneManagement.LoadSceneMode.Single
+                    autoIntegrate = true,
+                    loadSceneMode = UnityEngine.SceneManagement.LoadSceneMode.Single,
                 });
-                switchSceneAsset.ValueRW.scene = scene;
+                loadedScene = scene;
+                switchSceneAsset.ValueRW.startedLoad = true;
             }
         }
     }

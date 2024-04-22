@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -44,7 +44,6 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -67,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 1
@@ -328,15 +324,15 @@ MonoBehaviour:
   mesh:
     Id:
       GlobalId:
-        SceneObjectIdentifier0: 10207
+        SceneObjectIdentifier0: -3071380337512292834
         SceneObjectIdentifier1: 0
         AssetGUID:
           Value:
-            x: 0
-            y: 0
-            z: 14
-            w: 0
-        IdentifierType: 4
+            x: 1494855236
+            y: 1304457737
+            z: 1254973342
+            w: 2412635411
+        IdentifierType: 1
       GenerationType: 1
   material:
     Id:

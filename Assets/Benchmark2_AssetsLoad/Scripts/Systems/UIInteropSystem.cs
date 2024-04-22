@@ -21,7 +21,7 @@ namespace Benchmark2_AssetsLoad.Scripts.Systems
             state.EntityManager.AddComponentData(state.SystemHandle, new LoadedGoAssets(){ gameObject = null, gameObjectInstance = null });
             state.EntityManager.AddComponentData(state.SystemHandle, new UIEventBridge()
             {
-                handler = Object.FindObjectOfType<UIEventHandler>()
+                handler = Object.FindFirstObjectByType<UIEventHandler>()
             });
         }
         

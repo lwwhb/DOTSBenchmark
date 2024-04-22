@@ -11,7 +11,7 @@ namespace Benchmark5_ContentManagement.Scripts.Authoring
     public struct AdditiveSceneAsset : IBufferElementData
     {
         public WeakObjectSceneReference sceneAssetRef;
-        public Scene scene;
+        public bool startedLoad;
     }
     public class AdditiveSceneAssetsAuthoring : MonoBehaviour
     {
@@ -29,7 +29,7 @@ namespace Benchmark5_ContentManagement.Scripts.Authoring
                     loadScenesData[i] = new AdditiveSceneAsset
                     {
                         sceneAssetRef = authoring.loadScenesRef[i],
-                        scene = default
+                        startedLoad = false
                     };
                 }
             }

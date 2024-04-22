@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Benchmark5_ContentManagement/Scenes/LoadSceneContent/SceneContentLoader.unity
     guid: 444df6c31c751465e8d2c3725b5f2d82
   - enabled: 1
-    path: Assets/Benchmark5_ContentManagement/Scenes/LoadSceneContent/test.unity
+    path: Assets/Benchmark5_ContentManagement/Scenes/LoadSceneContent/NewContentScene.unity
     guid: 65f93fc0cc754432b8cecd490127977b
   - enabled: 1
     path: Assets/Benchmark5_ContentManagement/Scenes/LoadSceneContent/AdditiveCubeScene.unity
@@ -204,3 +204,4 @@ EditorBuildSettings:
     path: Assets/Benchmark4_ScenesLoad/Scenes/DynamicLoadSubscenes/Subscene49.unity
     guid: 450e091d25cf84fb8bd44108a58adff2
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

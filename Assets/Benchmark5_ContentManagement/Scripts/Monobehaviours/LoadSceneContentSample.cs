@@ -21,6 +21,7 @@ namespace Benchmark5_ContentManagement.Scripts.Monobehaviours
             
 #if ENABLE_CONTENT_DELIVERY
             ContentDeliveryGlobalState.LogFunc = LogUtility.ContentDeliveryLog;
+            LogUtility.Log(Application.persistentDataPath);
             //如果remoteUrlRoot为空，则从本地加载
             ContentDeliveryGlobalState.Initialize(remoteUrlRoot, Application.persistentDataPath + "/content-cache",
                 initialContentSet, s =>
@@ -47,12 +48,12 @@ namespace Benchmark5_ContentManagement.Scripts.Monobehaviours
         
         void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            Debug.Log(scene.name + " Loaded");
+            LogUtility.Log(scene.name + " Loaded");
         }
 
         void OnSceneUnloaded(Scene scene)
         {
-            Debug.Log(scene.name + " UnLoaded");
+            LogUtility.Log(scene.name + " UnLoaded");
         }
 
         public void OnClickLoadAdditiveScenes()
@@ -96,7 +97,16 @@ namespace Benchmark5_ContentManagement.Scripts.Monobehaviours
         {
             if (sceneContentAPI != null)
             {
+#if ENABLE_CONTENT_DELIVERY
+                if(contentIsReady)
+                    sceneContentAPI.SwitchSceneAsync();
+                else
+                {
+                    LogUtility.ContentDeliveryLogError("Content is not ready");
+                }
+#else
                 sceneContentAPI.SwitchSceneAsync();
+#endif
             }
         }
         
