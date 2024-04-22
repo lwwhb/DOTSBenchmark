@@ -50,7 +50,7 @@ public class ObjectGeneratorWindow : EditorWindow
             Scene scene = SceneManager.GetActiveScene();
             if (scene != null)
             {
-                var subScene = Object.FindObjectOfType<SubScene>();
+                var subScene = Object.FindFirstObjectByType<SubScene>();
                 if (subScene == null)
                 {
                     resultInfoLabel.text = "错误：该场景下没有EntitiesScene子场景对象";
@@ -73,7 +73,7 @@ public class ObjectGeneratorWindow : EditorWindow
             Scene scene = SceneManager.GetActiveScene();
             if (scene != null)
             {
-                var subScene = Object.FindObjectOfType<SubScene>();
+                var subScene = Object.FindFirstObjectByType<SubScene>();
                 if (subScene == null)
                 {
                     resultInfoLabel.text = "错误：该场景下没有EntitiesScene子场景对象";
